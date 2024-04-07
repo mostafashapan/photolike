@@ -20,6 +20,7 @@ export default function Likephoto() {
 
 
     const [like, setLike] = useState(false);
+    const [count, setCount] = useState(0);
     const  onTogglelike=()=>{
         console.log("mostafa")
 
@@ -27,11 +28,13 @@ export default function Likephoto() {
         if( ! like){
             {
                 setLike(true)
+                setCount(count+1)
             }
             }
           else
             {
                 setLike(false)
+                setCount(count-1)
             }
 
 
@@ -41,7 +44,7 @@ export default function Likephoto() {
     return (
         <>
         <div className="container text-center mt-5 bg-dark-subtleg" style={mystyle} >
-            <div className="container"> likes   <span> number 0</span> </div>
+            <div className="container"> likes `+{count}`  <span> number</span> </div>
             <div className="container " >  Likephoto </div>
             <img className="card-img " src={Cat} style={{height:"fit-content" }}/>
 
@@ -50,7 +53,7 @@ export default function Likephoto() {
                 bhhhhhhhh
                 { like ? (<AiFillHeart className="text-danger"
                     onClick={onTogglelike}  size={70} />):
-               ( <CiHeart  size={70}  onClick={onTogglelike}/>)  }
+               ( <CiHeart  size={70}  onClick={onTogglelike} />)  }
             </div>
 
 
