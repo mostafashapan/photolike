@@ -1,5 +1,6 @@
 import React from 'react'
 import Likephoto from "./allcomponent/likephoto";
+import Sidebar from './sidebar/sidebar';
 export default function Mainpage() {
     const stylee={
 
@@ -19,20 +20,8 @@ export default function Mainpage() {
             <Likephoto  className="col" />
             <Likephoto  className="col" />
             <Likephoto  className="col" />
-            <Likephoto  className="col" />
-            <Likephoto  className="col" />
-            <Likephoto  className="col" />
-            <Likephoto  className="col" />
-            <Likephoto  className="col" />
-            <Likephoto  className="col" />
-            <Likephoto  className="col" />
-            <Likephoto  className="col" />
-            <Likephoto  className="col" />
-            <Likephoto  className="col" />
-            <Likephoto  className="col" />
-            <Likephoto  className="col" />
-            <Likephoto  className="col" />
-            <Likephoto  className="col" />
+          
+            <Sidebar/>
         </div>
 
     )

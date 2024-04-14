@@ -50,7 +50,7 @@ export default function Likephoto() {
 
             <div className="container"   >
                 <FaRegSmileWink size={70} />
-                bhhhhhhhh
+                like as instgram
                 { like ? (<AiFillHeart className="text-danger"
                     onClick={onTogglelike}  size={70} />):
                ( <CiHeart  size={70}  onClick={onTogglelike} />)  }
