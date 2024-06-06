@@ -44,7 +44,7 @@ export default function Likephoto() {
     return (
         <>
         <div className="container text-center mt-5 bg-dark-subtleg" style={mystyle} >
-            <div className="container"> likes `+{count}`  <span> number</span> </div>
+            <div className="container"> likes +{count}  <span> number</span> </div>
             <div className="container " >  Likephoto </div>
             <img className="card-img " src={Cat} style={{height:"fit-content" }}/>
 
